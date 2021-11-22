@@ -105,6 +105,7 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
     background-color: $background-color-2;
+    width: 100%;
 }
 
 .aboutMeSubContainer {
@@ -163,15 +164,17 @@ body {
     max-width: $maxContentWidth;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
     margin-bottom: 2rem;
 }
 
 .softSkillItem {
-    padding: 0rem 0.25rem;
+    padding: 0rem 0.5rem;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 1rem;
+
 }
 
 .languageContainer {

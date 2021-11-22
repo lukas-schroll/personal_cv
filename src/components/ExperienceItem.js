@@ -9,7 +9,6 @@ import {
 } from "@mui/lab";
 import ExperienceDetails from "./ExperienceDetails";
 
-
 function ExperienceItem({experience, side}) {
     return (
         <div>
