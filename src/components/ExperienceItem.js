@@ -70,6 +70,8 @@ export function parseDateString(dateString) {
         case '12':
             monthString = "Dez"
             break
+        default:
+            return ""
     }
 
     return monthString + " "+ arr[0]

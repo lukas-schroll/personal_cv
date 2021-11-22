@@ -1,5 +1,4 @@
 import React from 'react';
-import {green} from "@mui/material/colors";
 
 function SoftSkill({skill}) {
     return (
