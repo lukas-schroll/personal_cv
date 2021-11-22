@@ -2,6 +2,7 @@ import React from 'react';
 import Toggle from "./Toggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faDownload} from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
 
 
 const classes = 'header flexContainer'
@@ -12,8 +13,7 @@ function Header(props) {
         <div className={classes}>
             <p className='headerName'>Lukas Schroll</p>
             <div className='btnGroup'>
-                <button className='btn'> CV {element}</button>
-                <Toggle/>
+                <Link className='cvLink' to="/cv.pdf" target="_blank"  download>CV {element}</Link>
             </div>
         </div>
     );

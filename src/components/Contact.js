@@ -12,9 +12,19 @@ function Contact(props) {
             <div className='contactSubContainer'>
                 <h2 className='contactHeader'>Contact</h2>
                 <div className='contactIconContainer'>
-                    <GitHubIcon href='' className='contactIcon' sx={{fontSize: iconSize}}/>
-                    <LinkedInIcon className='contactIcon' sx={{fontSize: iconSize}}/>
-                    <MailOutlineIcon className='contactIcon' sx={{fontSize: iconSize}}/>
+                    <GitHubIcon
+                        onClick={() => window.open('https://github.com/lukas-schroll')}
+                        className='contactIcon'
+                        sx={{fontSize: iconSize}}
+                    />
+                    <LinkedInIcon
+                        onClick={() => window.open('https://www.linkedin.com/in/lukas-schroll/')}
+                        className='contactIcon'
+                        sx={{fontSize: iconSize}}/>
+                    <MailOutlineIcon
+                        onClick={() => window.location.replace('mailto:luki.schroll@gmail.com')}
+                        className='contactIcon'
+                        sx={{fontSize: iconSize}}/>
                 </div>
             </div>
         </div>

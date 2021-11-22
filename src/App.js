@@ -210,7 +210,7 @@ function App() {
             <SoftSkills softSkills={softSkills}/>
             <Languages languages={languages}/>
             <Experience experience={experience} title='Experience'/>
-            <Experience experience={education} title='Education' color='#1f1f1f'/>
+            <Experience experience={education} title='Education' color='#16151c'/>
             <Contact/>
             <Footer/>
         </div>
