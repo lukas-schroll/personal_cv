@@ -140,7 +140,7 @@ function App() {
 
     const fetchCvEntry = async (type) => {
         let response = await client.query([Prismic.Predicates.at('document.type', 'experience'), Prismic.Predicates.at('document.tags', [type])],
-            { orderings: '[my.experience.startdate desc]' })
+            {orderings: '[my.experience.startdate desc]'})
 
         let cvEntries = response.results.map(result => {
             return createCvEntry(
@@ -213,7 +213,6 @@ function App() {
             <Experience experience={education} title='Education' color='#1f1f1f'/>
             <Contact/>
             <Footer/>
-
         </div>
     );
 }

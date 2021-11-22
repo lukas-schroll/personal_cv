@@ -2,14 +2,15 @@ import React from 'react';
 import {Chip} from "@mui/material";
 import {red} from "@mui/material/colors";
 
-function TechnicalSkill({skill}) {
+function TechnicalSkill({skill, itemColor}) {
 
-    const handleClick = () => {};
-    const colors = ['#ffcccb', '#d76eee', '#e53935', '#81d4fa', '#4caf50' ,  '#ff5722']
-    Array.prototype.sample = function(){
-        return this[Math.floor(Math.random()*this.length)];
+    const handleClick = () => {
+    };
+
+    const colors = ['#EF6C00', '#4CAF50', '#03A9F4', '#9C27B0', '#ec407a' , '#00e5ff', '#ff1744']
+    Array.prototype.sample = function () {
+        return colors[Math.floor(Math.random() * colors.length)]
     }
-
 
 
     return (
@@ -17,16 +18,18 @@ function TechnicalSkill({skill}) {
             <p className='technologyTitle'>{skill.title}</p>
             <div className='technologyItems'>
                 {
-                    skill.technologies.map((tech, index) => (
-                        <div className='technologyItem' key={index}>
+                    skill.technologies.map((tech, index) => {
+                        let color = colors.sample()
+
+                        return <div className='technologyItem' key={index}>
                             <Chip
-                                sx={{color: colors.sample()}}
+                                sx={{color: color, borderColor: color}}
                                 label={tech}
                                 variant="outlined"
                                 onClick={handleClick}
                             />
                         </div>
-                    ))
+                    })
                 }
             </div>
         </div>
