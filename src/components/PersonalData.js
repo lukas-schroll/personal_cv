@@ -1,10 +1,10 @@
 import React from 'react';
-import photo from '../photo.png'
+import photo from '../ressources/photo.png'
 import ParticlesBg from "particles-bg";
 
 const classes = 'personalData flexContainer'
 
-function PersonalData(props) {
+function PersonalData() {
     return (
         <div className={classes}>
             <ParticlesBg type='cobweb' bg={true} color='#F0FFFF'/>
